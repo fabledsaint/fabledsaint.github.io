@@ -1,602 +1,76 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US">
+<html lang="en">
 <head>
 
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="author" content="Ra1n" />
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>ra1n.cc</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-	<!-- Stylesheets
-	============================================= -->
-	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,500,700" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-	<link rel="stylesheet" href="style.css" type="text/css" />
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- One Page Module Specific Stylesheet -->
-	<link rel="stylesheet" href="onepage.css" type="text/css" />
-	<!-- / -->
+  <!-- FONT | NOTE - contemplating keeping ":400,300,600"
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css">
 
-	<link rel="stylesheet" href="css/dark.css" type="text/css" />
-	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
-	<link rel="stylesheet" href="css/et-line.css" type="text/css" />
-	<link rel="stylesheet" href="css/animate.css" type="text/css" />
-	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
-
-	<link rel="stylesheet" href="css/fonts.css" type="text/css" />
-
-	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-
-	<!-- Document Title
-	============================================= -->
-	<title>Home | Ra1nCC</title>
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/milligram.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
 
 </head>
-
-<body class="stretched dark side-push-panel">
-
-	<div class="body-overlay"></div>
-
-	<div id="side-panel" class="dark">
-
-		<div id="side-panel-trigger-close" class="side-panel-trigger"><a href="#"><i class="icon-line-cross"></i></a></div>
-
-		<div class="side-panel-wrap">
-
-			<div class="widget widget_links clearfix">
-
-				<h4>About Ra1n</h4>
-
-				<div style="font-size: 14px; line-height: 1.7;">
-					<address style="line-height: 1.7;">
-						Based in Sydney, Australia<br>
-					</address>
-
-					<div class="clear topmargin-sm"></div>
-
-					<abbr title="Discord">Discord:</abbr> discord.gg/qmmbJ63<br>
-					<abbr title="Email Address">Email:</abbr> info@ra1n.cc <br> (e-mail not operational yet)
-				</div>
-
-			</div>
-
-			<div class="widget clearfix">
-
-				<h4>Connect Socially</h4>
-
-				<a href="#" class="social-icon si-small si-colored si-twitter" title="Twitter">
-					<i class="icon-twitter"></i>
-					<i class="icon-twitter"></i>
-				</a>
-				<a href="https://github.com/Ra1nCC" class="social-icon si-small si-colored si-github" title="Github">
-					<i class="icon-github"></i>
-					<i class="icon-github"></i>
-				</a>
-				<a href="https://www.instagram.com/neroshio/" class="social-icon si-small si-colored si-instagram" title="Instagram">
-					<i class="icon-instagram"></i>
-					<i class="icon-instagram"></i>
-				</a>
-
-			</div>
-
-		</div>
-
-	</div>
-
-	<!-- Document Wrapper
-	============================================= -->
-	<div id="wrapper" class="clearfix">
-
-		<!-- Header
-		============================================= -->
-		<header id="header" class="full-header transparent-header static-sticky" data-sticky-offset="full" data-sticky-offset-negative="100">
-
-			<div id="header-wrap">
-
-				<div class="container clearfix">
-
-					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
-
-					<!-- Logo
-					============================================= -->
-					<div id="logo">
-						<a href="index.html" class="standard-logo" data-dark-logo="images/logo.png"><img src="images/logo.png" alt="Ra1n Logo"></a>
-						<a href="index.html" class="retina-logo" data-dark-logo="images/logo@2x.png"><img src="images/logo@2x.png" alt="Ra1n Logo"></a>
-					</div><!-- #logo end -->
-
-					<!-- Primary Navigation
-					============================================= -->
-					<nav id="primary-menu">
-
-						<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
-							<li><a href="#" data-href="#wrapper"><div>Home</div></a></li>
-							<li><a href="#" data-href="#section-about"><div>About</div></a></li>
-							<li><a href="#" data-href="#section-works"><div>Works</div></a></li>
-							<li><a href="#" data-href="#section-services"><div>Services</div></a></li>
-						</ul>
-
-						<div id="side-panel-trigger" class="side-panel-trigger"><a href="#"><i class="icon-reorder"></i></a></div>
-
-					</nav><!-- #primary-menu end -->
-
-				</div>
-
-			</div>
-
-		</header><!-- #header end -->
-
-		<!-- Slider
-		============================================= -->
-		<section id="slider" class="slider-element slider-parallax full-screen force-full-screen">
-
-			<div class="slider-parallax-inner">
-
-				<div class="full-screen force-full-screen dark section nopadding nomargin noborder ohidden">
-
-					<div class="container center">
-						<div class="vertical-middle ignore-header">
-							<div class="emphasis-title">
-								<h1>
-									<span class="text-rotater nocolor" data-separator="|" data-rotate="fadeIn" data-speed="6000">
-										<span class="t-rotate t700 font-body opm-large-word">ra1n.|bored.|creative.|procrastination.|games.</span>
-									</span>
-								</h1>
-							</div>
-							<a href="#" class="button button-border button-light button-rounded" data-scrollto="#section-works" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">View their Works</a>
-						</div>
-					</div>
-
-					<div class="video-wrap">
-	                    <video id="slide-video" poster="images/videos/1.jpg" preload="auto" loop muted autoplay>
-	                        <source src='images/videos/1.webm' type='video/webm' />
-	                        <source src='images/videos/1.mp4' type='video/mp4' />
-	                    </video>
-	                    <div class="video-overlay" style="background-color: rgba(0,0,0,0.2);"></div>
-	                </div>
-
-					<a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="65" class="one-page-arrow dark"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
-
-				</div>
-
-			</div>
-
-		</section><!-- #slider end -->
-
-		<!-- Content
-		============================================= -->
-		<section id="content">
-
-			<div class="content-wrap nopadding">
-
-				<div id="section-about" class="center page-section">
-
-					<div class="container clearfix">
-
-						<h2 class="divcenter bottommargin font-body" style="max-width: 700px; font-size: 40px;">A student who's bored &amp; wants to create enjoyable projects</h2>
-
-						<p class="lead divcenter bottommargin" style="max-width: 800px;">Bored out of his mind, Ra1n strives to provide themself with procrastination and entertainment. With over 10 years of experience, they've managed to do whatever it takes to provide their clients (i.e them and their friends) with fun.</p>
-
-						<p class="bottommargin" style="font-size: 16px;"><a href="#" data-scrollto="#section-services" data-easing="easeInOutExpo" data-speed="1250" data-offset="70" class="more-link">Learn more <i class="icon-angle-right"></i></a></p>
-
-						<div class="clear"></div>
-
-						<div class="row topmargin-lg divcenter" style="max-width: 1000px;">
-
-							<div class="col-md-4 bottommargin">
-
-								<div class="team">
-									<div class="team-image">
-										<img src="images/team/1.jpg" alt="Di3">
-										<div class="team-overlay">
-											<div class="team-social-icons">
-												<a href="https://soundcloud.com/di3n0w" class="social-icon si-borderless si-small si-soundcloud" title="Soundcloud">
-													<i class="icon-soundcloud"></i>
-													<i class="icon-soundcloud"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-									<div class="team-desc team-desc-bg">
-										<div class="team-title"><h4>Di3</h4><span>Co-Founder of boredom</span></div>
-									</div>
-								</div>
-
-							</div>
-
-							<div class="col-md-4 bottommargin">
-
-								<div class="team">
-									<div class="team-image">
-										<img src="images/team/2.jpg" alt="Ra1n">
-										<div class="team-overlay">
-											<div class="team-social-icons">
-												<a href="https://twitter.com/fabledsaint" class="social-icon si-borderless si-small si-twitter" title="Twitter">
-													<i class="icon-twitter"></i>
-													<i class="icon-twitter"></i>
-												</a>
-												<a href="https://github.com/Ra1nCC" class="social-icon si-borderless si-small si-github" title="Github">
-													<i class="icon-github"></i>
-													<i class="icon-github"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-									<div class="team-desc team-desc-bg">
-										<div class="team-title"><h4>Ra1n</h4><span>CEO of Procrastination</span></div>
-									</div>
-								</div>
-
-							</div>
-
-							<div class="col-md-4 bottommargin">
-
-								<div class="team">
-									<div class="team-image">
-										<img src="images/team/3.jpg" alt="Neroshio">
-										<div class="team-overlay">
-											<div class="team-social-icons">
-												<a href="https://www.instagram.com/neroshio/" class="social-icon si-borderless si-small si-instagram" title="Instagram">
-													<i class="icon-instagram"></i>
-													<i class="icon-instagram"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-									<div class="team-desc team-desc-bg">
-										<div class="team-title"><h4>Neroshio</h4><span>Management</span></div>
-									</div>
-								</div>
-
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-
-				<div id="section-works" class="page-section notoppadding">
-
-					<div class="section nomargin">
-						<div class="container clearfix">
-							<div class="divcenter center" style="max-width: 900px;">
-								<h2 class="nobottommargin t300 ls1">Ra1n creates &amp; crafts projects that are meh in general. After eventually managing to make something, Ra1n shoves the content down their friends' throats. Take a moment to browse through some random images that may or may not be related to their work.</h2>
-							</div>
-						</div>
-					</div>
-
-					<!-- Portfolio Items
-					============================================= -->
-					<div id="portfolio" class="portfolio grid-container portfolio-nomargin portfolio-full portfolio-masonry mixed-masonry clearfix">
-
-						<article class="portfolio-item pf-media pf-icons wide">
-							<div class="portfolio-image">
-								<a href="#">
-									<img src="images/portfolio/mixed/1.jpg" alt="Monkey">
-								</a>
-								<div class="portfolio-overlay">
-									<div class="portfolio-desc">
-										<h3><a>Monkey</a></h3>
-										<span><a>Isn't he happy?</a></span>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-illustrations">
-							<div class="portfolio-image">
-								<a href="#">
-									<img src="images/portfolio/mixed/2.jpg" alt="Obama">
-								</a>
-								<div class="portfolio-overlay">
-									<div class="portfolio-desc">
-										<h3><a>Obama</a></h3>
-										<span><a>He's talking about how <br>much he likes me!</a></span>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-graphics pf-uielements">
-							<div class="portfolio-image">
-								<a href="#">
-									<img src="images/portfolio/mixed/3.jpg" alt="Alone">
-								</a>
-								<div class="portfolio-overlay">
-									<div class="portfolio-desc">
-										<h3><a>Alone</a></h3>
-										<span><a>Ra1n is sometimes <br> alone</a></span>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-icons wide">
-							<div class="portfolio-image">
-								<a href="#">
-									<img src="images/portfolio/mixed/4.jpg" alt="Color Control">
-								</a>
-								<div class="portfolio-overlay">
-									<div class="portfolio-desc">
-										<h3><a>Color Control</a></h3>
-										<span><a>A minigame on the Ra1nMC Minecraft Server</a></span>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-uielements pf-media wide">
-							<div class="portfolio-image">
-								<a href="#">
-									<img src="images/portfolio/mixed/5.jpg" alt="Code">
-								</a>
-								<div class="portfolio-overlay">
-									<div class="portfolio-desc">
-										<h3><a>Code</a></h3>
-										<span><a>You are looking at the code for this section of the website</a></span>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-icons">
-							<div class="portfolio-image">
-								<a href="#">
-									<img src="images/portfolio/mixed/6.jpg" alt="Work">
-								</a>
-								<div class="portfolio-overlay">
-									<div class="portfolio-desc">
-										<h3><a>Schoolwork</a></h3>
-										<span><a>is stupid</a></span>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-uielements pf-icons">
-							<div class="portfolio-image">
-								<a href="#">
-									<img src="images/portfolio/mixed/7.jpg" alt="Backpack Contents">
-								</a>
-								<div class="portfolio-overlay">
-									<div class="portfolio-desc">
-										<h3><a>Wow</a></h3>
-										<span><a>Absolutely Genius</a></span>
-									</div>
-								</div>
-							</div>
-						</article>
-
-					</div><!-- #portfolio end -->
-
-					<div class="topmargin center"><a href="https://youtu.be/dQw4w9WgXcQ" class="button button-border button-circle t600">Here's a button</a></div>
-
-				</div>
-
-				<div id="section-services" class="page-section notoppadding">
-
-					<div class="section nomargin">
-						<div class="container clearfix">
-							<div class="divcenter center" style="max-width: 900px;">
-								<h2 class="nobottommargin t300 ls1">Ra1n enjoys procrastinating &amp; doing things he likes much more than schoolwork. Coding this helps them in procrastinating. Browse through some icons please.</h2>
-							</div>
-						</div>
-					</div>
-
-					<div class="row align-items-stretch">
-
-						<div class="col-lg-4 d-none d-md-block" style="background: url('images/page/rain.jpg') center center no-repeat; background-size: cover;"></div>
-						<div class="col-lg-8">
-							<div>
-								<div class="row align-items-stretch grid-border clearfix">
-									<div class="col-lg-4 col-md-6 col-padding">
-										<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-											<div class="fbox-icon">
-												<a href="#"><i class="icon-et-mobile"></i></a>
-											</div>
-											<h3>A phone and tablet</h3>
-										</div>
-									</div>
-									<div class="col-lg-4 col-md-6 col-padding">
-										<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-											<div class="fbox-icon">
-												<a href="#"><i class="icon-et-presentation"></i></a>
-											</div>
-											<h3>Stonks</h3>
-										</div>
-									</div>
-									<div class="col-lg-4 col-md-6 col-padding">
-										<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-											<div class="fbox-icon">
-												<a href="#"><i class="icon-et-puzzle"></i></a>
-											</div>
-											<h3>Found the piece</h3>
-										</div>
-									</div>
-									<div class="col-lg-4 col-md-6 col-padding">
-										<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-											<div class="fbox-icon">
-												<a href="#"><i class="icon-et-gears"></i></a>
-											</div>
-											<h3>cogs</h3>
-										</div>
-									</div>
-									<div class="col-lg-4 col-md-6 col-padding">
-										<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-											<div class="fbox-icon">
-												<a href="#"><i class="icon-et-genius"></i></a>
-											</div>
-											<h3>An atom is small</h3>
-										</div>
-									</div>
-									<div class="col-lg-4 col-md-6 col-padding">
-										<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-											<div class="fbox-icon">
-												<a href="#"><i class="icon-et-hotairballoon"></i></a>
-											</div>
-											<h3>Amazon drone delivery</h3>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-					<div class="section dark nomargin">
-						<div class="divcenter center" style="max-width: 900px;">
-							<h2 class="nobottommargin t300 ls1">Wanna do something? Join the <a href="https://discord.gg/qmmbJ63" class="button button-border button-circle button-light button-large notopmargin nobottommargin" style="position: relative; top: -3px;">Discord</a></h2>
-						</div>
-					</div>
-
-					<div class="section parallax nomargin dark" style="background-image: url('images/page/testimonials.jpg'); padding: 150px 0;" data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -200px;">
-
-						<div class="container clearfix">
-
-							<div class="col_two_fifth nobottommargin">&nbsp;</div>
-
-							<div class="col_three_fifth nobottommargin col_last">
-
-								<div class="fslider testimonial testimonial-full nobgcolor noborder noshadow nopadding" data-arrows="false">
-									<div class="flexslider">
-										<div class="slider-wrap">
-											<div class="slide">
-												<div class="testi-content">
-													<p>U look like a bomb</p>
-													<div class="testi-meta">
-														DaGamingGuy
-														<span>Professional Monkey</span>
-													</div>
-												</div>
-											</div>
-											<div class="slide">
-												<div class="testi-content">
-													<p>Ok you're a funny monkey.</p>
-													<div class="testi-meta">
-														TKO
-														<span>Real Life Simp</span>
-													</div>
-												</div>
-											</div>
-											<div class="slide">
-												<div class="testi-content">
-													<p>You're actuallt epic. Youve helped me with a lotta things :)</p>
-													<div class="testi-meta">
-														AABatteries
-														<span>Doodie</span>
-													</div>
-												</div>
-											</div>
-											<div class="slide">
-												<div class="testi-content">
-													<p>You bruh</p>
-													<div class="testi-meta">
-														Ronald_Who
-														<span>God</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</section><!-- #content end -->
-
-		<!-- Footer
-		============================================= -->
-		<footer id="footer" class="dark noborder">
-
-			<div class="container center">
-				<div class="footer-widgets-wrap">
-
-					<div class="row divcenter clearfix">
-
-						<div class="col-lg-4">
-
-							<div class="widget clearfix">
-								<h4>Site Links</h4>
-
-								<ul class="list-unstyled footer-site-links nobottommargin">
-									<li><a href="#" data-scrollto="#wrapper" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Top</a></li>
-									<li><a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">About</a></li>
-									<li><a href="#" data-scrollto="#section-works" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Works</a></li>
-									<li><a href="#" data-scrollto="#section-services" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Services</a></li>
-								</ul>
-							</div>
-
-						</div>
-
-						<div class="col-lg-4">
-							<h4><a href="index.html" class="retina-logo" data-dark-logo="images/logo@2x.png"><img src="images/logo@2x.png" alt="Ra1n Logo"></a></h4>
-						</div>
-
-						<div class="col-lg-4">
-
-							<div class="widget clearfix">
-								<h4>Contact</h4>
-
-								<p class="lead">Sydney, Australia<br>discord.gg/qmmbJ63</p>
-
-								<div class="center topmargin-sm">
-									<a href="https://soundcloud.com/di3n0w" class="social-icon inline-block noborder si-small si-soundcloud" title="Soundcloud">
-										<i class="icon-soundcloud"></i>
-										<i class="icon-soundcloud"></i>
-									</a>
-									<a href="https://twitter.com/fabledsaint" class="social-icon inline-block noborder si-small si-twitter" title="Twitter">
-										<i class="icon-twitter"></i>
-										<i class="icon-twitter"></i>
-									</a>
-									<a href="https://github.com/Ra1nCC" class="social-icon inline-block noborder si-small si-github" title="Github">
-										<i class="icon-github"></i>
-										<i class="icon-github"></i>
-									</a>
-									<a href="https://www.instagram.com/neroshio/" class="social-icon inline-block noborder si-small si-instagram" title="Instagram">
-										<i class="icon-instagram"></i>
-										<i class="icon-instagram"></i>
-									</a>
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-
-			<div id="copyrights">
-				<div class="container center clearfix">
-					Copyright Ra1nCC | All Rights Reserved
-				</div>
-			</div>
-
-		</footer><!-- #footer end -->
-
-	</div><!-- #wrapper end -->
-
-	<!-- Go To Top
-	============================================= -->
-	<div id="gotoTop" class="icon-angle-up"></div>
-
-	<!-- External JavaScripts
-	============================================= -->
-	<script src="js/jquery.js"></script>
-	<script src="js/plugins.js"></script>
-
-
-	<!-- Footer Scripts
-	============================================= -->
-	<script src="js/functions.js"></script>
-
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="slider">
+        <div class="slider--rotator">
+          <h3><span id="ityped" class="ityped"></span></h3>
+        </div>
+        <div class="sandbag"></div>
+        <div class="clearfix downarrow">
+        <a style="font-size:200%;" href="#main">&#8964;</a>
+        </div>
+      </div>
+    </div>
+    <div id="main" class="row" style="height: 100vh;" >
+      <div class="column" style="margin-top: 25%">
+        <h4>Ra1n</h4>
+        <p>Good day. Care to relax for a while?</p>
+        <ul>
+          <li><a href="image.html">img</a></li>
+          <li><a href="thoughts.html">thoughts</a></li>
+          <li><a href="about.html">personal</a></li>
+        </ul>
+      </div>
+      <div class="column" style="display:flex; align-items: center; justify-content: center;">
+        <img src="img/rain.gif" alt="black raindrop sillouhette with cracks forming then filling up" style="display:block; height: 50%; width:100%%; margin:0 auto; -moz-user-select: none; -webkit-user-select: none; user-select: none; pointer-events: none;"></img>
+      </div>
+    </div>
+  </div>
+
+<!-- JS
+---------------------------------------- -->
+<script src="js/ityped.min.js"></script>
+<script>
+  ityped.init('#ityped', {
+    strings:['Ra1n     ', 'Bored...', 'This is definitely not procrastination.', 'Creative?', '<insert thoughtful expression>', 'Wasting time.    .    .    .    .        .             .               .', 'Enjoy :)'],
+    startDelay: 200,
+    endDelay: 400,
+    loop: true
+  });
+</script>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
