@@ -1,0 +1,67 @@
+/* Ra1n.cc Styles */
+
+/* Background Color */
+
+html, body {
+  height: 100%;
+}
+
+html {
+  background-color: #f1faee;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f1faee;
+  font-family: 'Open Sans', sans-serif;
+  animation: fadeInAnimation ease 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+
+.rain-active {
+  background-color: #ccbcbc;
+}
+
+.slider{
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.slider--rotator {
+  text-align: center;
+  margin-top: 50vh;
+}
+
+.sandbag {
+  width: auto;
+  flex-grow: 8;
+  overflow:hidden;
+}
+
+.downarrow {
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  bottom: 2vh;
+}
+
+#main {
+  display: flex;
+  align-content: center;
+}
