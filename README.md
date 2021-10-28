@@ -3,4 +3,4 @@
 </p>
 
 Website made for fun and procrastination of the more ~~boring~~ **important** things. <br>
-Currently rebuilding the site from scratch :)
+This is the old initial rework branch. It has been merged with master.
