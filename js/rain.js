@@ -15,7 +15,7 @@ class Rain{
     if (sessionStorage.getItem("mode") == "dark") {
       ctx.strokeStyle="white";
     } else {
-    ctx.strokeStyle="black";
+      ctx.strokeStyle="black";
     }
     ctx.moveTo(this.x,this.y);
     ctx.lineTo(this.x,this.y+this.l);
