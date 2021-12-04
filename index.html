@@ -17,10 +17,12 @@
   <!-- Favicon -->
   <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
 </head>
-<body>
+<body onload="setup();">
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <input onclick="darkModeToggle" type="checkbox" class="switch_1" id="ChangeTheme">
+  <canvas id="canvas"></canvas>
   <div class="container">
     <div class="row">
       <div class="slider">
@@ -29,7 +31,7 @@
         </div>
         <div class="sandbag"></div>
         <div class="clearfix downarrow">
-        <a style="font-size:200%;" href="#main">&#8964;</a>
+          <a style="font-size:200%;" href="#main">&#8964;</a>
         </div>
       </div>
     </div>
@@ -51,6 +53,8 @@
 
 <!-- JS  -->
 <script src="js/ityped.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/rain.js"></script>
 <script>
   ityped.init('#ityped', {
     strings:['Ra1n     ', 'Bored...', 'This is definitely not procrastination.', 'Creative?', '<insert thoughtful expression>', 'Wasting time.    .    .    .    .        .             .               .', 'Enjoy :)'],
