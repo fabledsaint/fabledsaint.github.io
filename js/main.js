@@ -1,3 +1,4 @@
+//START darkMode
 var checkbox = document.getElementById("ChangeTheme"); //get the checkbox to a variable
 
 //check storage if dark mode was on or off
@@ -30,3 +31,15 @@ function nodark() {
   checkbox.checked = false; //set checkbox to be unchecked state
   sessionStorage.setItem("mode", "light"); //store a name & value to know that dark mode is off or light mode is on
 }
+//END darkMode
+
+//START smoothScroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
