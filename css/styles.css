@@ -5,7 +5,12 @@ html, body {
 }
 
 html {
-  scroll-behavior: smooth;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 body {
@@ -35,18 +40,15 @@ body {
 }
 
 .slider--rotator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  margin-top: 50vh;
-}
-
-.sandbag {
-  width: auto;
-  flex-grow: 8;
-  overflow:hidden;
+  flex-grow: 2;
 }
 
 .downarrow {
-  z-index: 2;
+  z-index: 5;
   position: relative;
   text-align: center;
   bottom: 2vh;
@@ -69,6 +71,15 @@ body {
   pointer-events: none;
 }
 
+#main-text {
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+}
+
+
+/* start dark mode */
+
 .dark-mode {
   background-color: #606c76;
   color: #f1faee;
@@ -88,8 +99,9 @@ body {
   border: .1px solid white;
 }
 
+/* end dark mode */
 
-/* checkbox thing */
+/* start checkbox thing */
 
 input[type="checkbox"].switch_1{
   z-index:20;
@@ -105,8 +117,6 @@ input[type="checkbox"].switch_1{
 	        appearance: none;
   width: 2em;
   height: 1em;
-/*	width: 3.5em;
-	height: 1.5em;*/
 	background: #606c76;
 	border-radius: 3em;
 	cursor: pointer;
