@@ -50,16 +50,16 @@ function loop() {
 function setup() {
   c = document.getElementById("canvas");
   ctx = c.getContext("2d");
-  canvas.width = window.innerWidth-20;
-  canvas.height = window.innerHeight-20;
+  c.width = window.innerWidth;
+  c.height = window.innerHeight;
   vRain = [];
   for (var i=0;i<60;i++) {
     vRain[i]=new Rain(
       Math.floor(Math.random()*c.width)+5,
       Math.floor(Math.random()*100)-100,
       Math.floor(Math.random()*30)+1,
-      Math.floor(Math.random()*12)+4,
-    )
+      Math.floor(Math.random()*12)+4
+    );
   }
 
   setInterval(loop,10);
@@ -67,6 +67,6 @@ function setup() {
 
 
 function resizeCanvas() {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+  c.width = window.innerWidth;
+  c.height = window.innerHeight;
 }
