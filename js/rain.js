@@ -67,6 +67,6 @@ function setup() {
 
 
 function resizeCanvas() {
-  canvas.width = window.innerWidth-20;
-  canvas.height = window.innerHeight-20;
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
 }
