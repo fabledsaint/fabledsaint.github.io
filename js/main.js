@@ -1,5 +1,6 @@
 //START darkMode
 var checkbox = document.getElementById("ChangeTheme"); //get the checkbox to a variable
+var maingif = document.getElementById("maingif"); //get main gif to a variable
 
 //check storage if dark mode was on or off
 if (sessionStorage.getItem("mode") == "dark") {
@@ -21,6 +22,7 @@ checkbox.addEventListener("change", function() {
 //function for checkbox when checkbox is checked
 function darkmode() {
   document.body.classList.add("dark-mode"); //add a class to the body tag
+  maingif.src = "img/whiterain.gif";
   checkbox.checked = true; //set checkbox to be checked state
   sessionStorage.setItem("mode", "dark"); //store a name & value to know that dark mode is on
 }
@@ -28,6 +30,7 @@ function darkmode() {
 //function for checkbox when checkbox is not checked
 function nodark() {
   document.body.classList.remove("dark-mode"); //remove added class from body tag
+  maingif.src = "img/rain.gif";
   checkbox.checked = false; //set checkbox to be unchecked state
   sessionStorage.setItem("mode", "light"); //store a name & value to know that dark mode is off or light mode is on
 }

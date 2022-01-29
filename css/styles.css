@@ -99,6 +99,7 @@ body {
   border: .1px solid white;
 }
 
+
 /* end dark mode */
 
 /* start checkbox thing */
@@ -158,4 +159,15 @@ canvas {
   top:0;
   left:0;
   z-index: -1;
+}
+
+#maingif {
+  display:block;
+  height: 50%;
+  width:auto;
+  margin:0 auto;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
 }
