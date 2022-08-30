@@ -170,4 +170,5 @@ canvas {
   -webkit-user-select: none;
   user-select: none;
   pointer-events: none;
+  object-fit: contain;
 }
