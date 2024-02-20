@@ -22,7 +22,7 @@ checkbox.addEventListener("change", function() {
 //function for checkbox when checkbox is checked
 function darkmode() {
   document.body.classList.add("dark-mode"); //add a class to the body tag
-  maingif.src = "img/whiterain.gif";
+  maingif.style.filter = "invert(100%)";
   checkbox.checked = true; //set checkbox to be checked state
   sessionStorage.setItem("mode", "dark"); //store a name & value to know that dark mode is on
 }
@@ -30,7 +30,7 @@ function darkmode() {
 //function for checkbox when checkbox is not checked
 function nodark() {
   document.body.classList.remove("dark-mode"); //remove added class from body tag
-  maingif.src = "img/rain.gif";
+  maingif.style.filter = "none";
   checkbox.checked = false; //set checkbox to be unchecked state
   sessionStorage.setItem("mode", "light"); //store a name & value to know that dark mode is off or light mode is on
 }
